@@ -1,0 +1,111 @@
+.burger {
+    position: relative;
+    width: 20px; 
+    height: 20px;
+    color: var(--color-text-primary);
+    
+    }
+  
+    .burger::before, .burger::after {
+        content:'';
+        position: absolute;
+        width: 16px;
+        height: 2px;
+        background-color: currentColor;
+        border-radius: 1px;
+        transition: opacity 0.2s 0.1s, transform 0.2s 0.1s;
+        }
+    
+    .burger::before {
+        top: 4px;
+        right: 0;
+        }
+    
+    .burger::after {
+        bottom: 4px;
+        left: 0;
+        }
+    
+    .burger__middle-line {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: currentColor;
+        border-radius: 1px;
+        top: 50%;
+        transform: translatey(-50%);
+        transition: transform 0.2s 0.1s; 
+        }
+    
+    .burger__middle-line::before {
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            border-radius: 1px;
+            left:0;   
+            transition: transform 0.2s 0.1s;
+            }
+    
+    .burger:hover::before {
+            opacity: 0;
+            transform: translatex(50%);
+            transition-delay: 0;
+        }
+    
+    .burger:hover::after {
+            opacity: 0;
+            transform: translatex(-50%);
+            transition-delay: 0;
+        }
+    
+    .burger:hover .burger__middle-line {
+            transform: translatey(-50%) rotate(-45deg);
+        }
+    
+    .burger:hover .burger__middle-line::before {
+            transform: rotate(-90deg);
+            }
+
+.button {
+    border-radius: 8px;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: bold;
+    outline: none;
+}
+
+    .button_view_primary {
+        margin-bottom: 2em;
+        background-color: var(--color-text-primary);
+        color: var(--color-control-bg-primary);
+    }
+
+    .button_view_secondary {
+        background: none;
+        color: var(--color-text-link);
+        border: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .button_view_secondary:hover {
+        color: var( --color-text-link-hover);
+        transition: backgraund 0.16s;
+    }
+
+    .button_size_l {
+        padding: 18px 32px;
+        font-size: 12px;
+    }
+
+    .button_view_primary:hover {
+        background: var(--color-control-bg-primary-hover);
+        transition: backgraund 0.16s;
+    }
+    
+    .button__icon {
+        vertical-align: middle;
+        margin-left: 5px;
+    }

@@ -1,0 +1,41 @@
+.title {
+    font-family: sans-serif;
+    font-size: 28px;
+    color: var(--color-text-primary);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.description {
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5em ;
+    text-align: center;
+    color: var(--color-text-secondary); 
+}
+
+.signature {
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1.5em ;
+    text-align: center;
+    color: var(--color-text-secondary); 
+}
+
+.numeral {
+    font-family: sans-serif;
+    font-size: 32px;
+    color: var(--color-text-stats);
+}
+
+.tag {
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5em ;
+    text-align: center;
+    color: var(--color-text-secondary); 
+}

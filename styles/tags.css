@@ -1,0 +1,13 @@
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--color-bg-ghost);
+    margin-bottom: 3em;
+}
+
+.tag {
+    margin: 3em 0em 3em 0em;
+    font-weight: bold;
+}

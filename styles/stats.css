@@ -1,0 +1,19 @@
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.stat {
+    flex-direction: column;
+}
+
+.stat:not(:last-child) {
+    margin-right:12px;
+}
+.numeral {
+    margin: 0 0 0 0;
+}
