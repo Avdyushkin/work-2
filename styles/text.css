@@ -25,6 +25,10 @@
     color: var(--color-text-secondary); 
 }
 
+.signature__icon {
+    margin-right: 5px;
+}
+
 .numeral {
     font-family: sans-serif;
     font-size: 32px;
